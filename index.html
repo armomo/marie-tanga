@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Marie Tanga</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" data-target="#navbar-collapse-main" data-toggle="collapse" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Marie Tanga</a>
+			</div>
+			<div id="navbar-collapse-main" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">Accueil</a></li>
+					<li><a href="#works">Oeuvres</a></li>
+					<li><a href="#about">A propos</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- first section - Home -->
+	<section id="home" class="home">
+		<div class="text-vcenter">
+			<blockquote class="blockquote-reverse">
+				<p>Pour connaitre la Loi du bonheur, fais de ton coeur une rose, afin que les prières qui sortent de ta bouche soient des mots parfumés à Dieu.</p>
+				<small>Marie Tanga</small>
+			</blockquote>
+			<!-- <a href="#works" class="btn btn-outline-inverse btn-lg">savoir plus</a> -->
+			<!-- <a href="#contact" class="btn btn-outline-inverse btn-lg">Contact</a> -->
+			<!-- <span class="glyphicon glyphicon-arrow-down"></span> -->
+		</div>
+	</section>
+
+	<!-- second section - Oeuvres -->
+	<section id="works" class="pad-section">
+		<div class="container-fluid">
+			<h2 class="text-center">Les Oeuvres</h2>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" id="headingOne" role="tab">
+						
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4 class="panel-title text-center">Le Mercredi</h4></a>
+						
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" id="headingTwo" role="tab">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><h4 class="panel-title text-center">Les Dons</h4></a>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+							<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- third section - A propos -->
+	<section id="about" class="pad-section">
+		<div class="container-fluid">
+			<div class="text-center">
+				<h2>A propos</h2>
+				<p>Considérée comme missionnaire, visionnaire ou encore une envoyée, je n'aime pas le terme de voyante, car il est trop commercial. Aimer mon prochain, l'aider à trouver des solutions, à réaliser l'irréalisable, à découvrir l'impossible, tel se définit ma mission, mon objectif, toujours au service de mon Maître le Tout-puissant. Je trouve que parler de moi n'est pas interessant et préfère faire témoigner de la rencontre avec l'Impossible.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- fourth section - Contact -->
+	<section id="contact" class="pad-section">
+		<div class="container-fluid">
+			<div class="text-center">
+				<h2>Contact</h2>
+				<form action="http://forms.brace.io/courtomaltes@yahoo.fr" method="POST" role="form">
+					<div class="form-group"><input type="text" name="name" class="form-control" placeholder="NOM" required></div>
+					<div class="form-group"><input type="email" name="_replyto" class="form-control" placeholder="EMAIL" required></div>
+					<div class="form-group"><textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="MESSAGE" required=""></textarea></div>
+					<button type="submit" class="btn btn-default pull-left">Envoyer</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<p class="text-center">&copy Marie Tanga · Tous droits réservés ·</p>
+		</div>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
