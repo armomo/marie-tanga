@@ -1,25 +1,41 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 *{
 	margin: 0;
 	padding: 0;
 }
 html, body{
-	/*color: #ffffff;*/
-	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	background:
+	linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+	url(../images/bg_acceuil.jpg) center center no-repeat fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	font-family: 'Roboto', sans-serif;
 	font-size: 100%;
-	/*height: 100%;*/
+	height: 100%;
 	width: 100%;
 }
-h2{
-	font-style: italic;
+h1{
+	font-size: 2.5rem;
+	font-weight: 400;
+	margin-bottom: 5%;
+	text-transform: uppercase;
+}
+h4{
+	/*font-size: 1.5rem;*/
+	font-weight: 400;
 	text-transform: uppercase;
 }
 .navbar-default{
-	background-color: #191919;
-	transition: background 0.6s ease 0s;
+	/*background-color: #191919;*/
+	background-color: rgba(0, 0, 0, 0.4);
 	text-transform: uppercase;
+	transition: background 0.6s ease 0s;
 }
 .navbar-default .navbar-brand{
     color: #fff;
@@ -29,8 +45,10 @@ h2{
 }
 .navbar-default .navbar-nav > li > a {
     color: #666666;
+    font-size: 0.8125rem;
 }
 .navbar-default .navbar-nav > li > a:hover {
+	background-color: rgba(0, 0, 0, 0.9);
     color: #ffffff;
     transition: background 0.4s ease 0s;
 }
@@ -38,34 +56,26 @@ h2{
 	padding: 5%;
 	height: 100%;
 }
+
+/*Section - Home*/
 #home{
-	background: url(../images/bg_acceuil.jpg) center center no-repeat fixed;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	color:#ffffff;
 	font-size: 0.8125rem;
-	max-height: 100% !important;
-	padding: 25%;
+	height: 100% !important;
+	padding: 15% 0 5% 0;
 	position: relative;
 	width: 100%;
 }
-blockquote{
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-	/*width: 70%;*/
-	/*margin-left: 30%;*/
-}
-blockquote > p{
-	font-size: 1rem;
-	text-align: justify;
-}
-blockquote small{
-	color: #ffffff;
-	font-size: 2.5rem;
-	font-style: italic;
+.title{
+	font-size: 5rem;
+	font-weight: 400;
 	text-transform: uppercase;
+}
+.quote{
+	font-size: 1rem;
+}
+#home a{
+	margin-top: 10%;
 }
 .btn-outline-inverse{
 	border: 1px solid #ffffff;
@@ -79,66 +89,69 @@ blockquote small{
 
 /*Section - Works*/
 #works{
-	/*max-height: 70%!important;*/
-	font-size: 0.8125rem;
+	font-size: 1rem;
 }
-#works .panel-title{
-	font-size: 2rem;
-	letter-spacing: 0.1rem;
-	line-height: 3rem;
+.work{
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 1px solid #ffffff;
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
-.panel-heading > a{
-	text-decoration: none;
-	text-transform: uppercase;
-}
-#accordion{
-	padding-top: 5%;
-}
+
 /*Section - About Me*/
 #about{
-	background: url(../images/bg_apropos.jpg) center center no-repeat fixed;
+	background: 
+	linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+	url(../images/bg_apropos.jpg) center center no-repeat fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	color: #ffffff;
 	display: table;
-	font-size: 0.8125rem;
-	height: 70%;
+	font-size: 1rem;
+	height: 50% !important;
 	position: relative;
 	width: 100%;
 }
-#about{
-	background-color: rgba(0,0,0,0.7);
-}
-#about .container-fluid{
-	background-color: rgba(0,0,0,0.7);
-}
 #about .text-center > p{
-	/*background-color: rgba(0,0,0,0.3);*/
-	margin-top: 3%;
 	padding: 0 10%;
 }
 /*Section - Contact*/
 #contact{
-	background-color: #f3f5f8;
+	color: #ffffff;
+	display: table;
+	font-size: 0.8125rem;
+	max-height: 100% !important;
+	position: relative;
+	width: 100%;
 }
 .form-control{
 	border-radius: 0;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 .form-control:focus{
 	color: #ffffff;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 .btn{
+	background-color: rgba(0, 0, 0, 0);
 	border-radius: 0!important;
+	border: 3px solid #ffffff;
+	color: #ffffff;
 	text-transform: uppercase;
+}
+.btn:hover{
+	background-color: #ffffff;
+	border-radius: 3px solid #ffffff !important;
+	color: #000000;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
 }
 /*Section - Footer*/
 footer{
-	background-color: #000000;
-	color: #8c9398;
+	color: #ffffff;
 	font-size: 0.625rem;
-	padding: 1%;
+	padding-top: 10%;
 	text-transform: uppercase;
 }
